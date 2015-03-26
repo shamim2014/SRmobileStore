@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EDF9BB9-9FD9-41BB-8A79-5D15663203AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SRmobileStore</RootNamespace>
+    <AssemblyName>SRmobileStore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Employee.Designer.cs">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.cs" />
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill_info.Designer.cs">
+      <DependentUpon>Bill_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer search.Designer.cs">
+      <DependentUpon>Customer search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dealer Search.Designer.cs">
+      <DependentUpon>Dealer Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dealer.Designer.cs">
+      <DependentUpon>Dealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DealerInfo.Designer.cs">
+      <DependentUpon>DealerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDealer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDealer.Designer.cs">
+      <DependentUpon>DeleteDealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Search.Designer.cs">
+      <DependentUpon>Employee Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee Profile.Designer.cs">
+      <DependentUpon>Empolyee Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityClass.cs" />
+    <Compile Include="Expence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expence.Designer.cs">
+      <DependentUpon>Expence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Purchase.Designer.cs">
+      <DependentUpon>New Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add Employee.resx">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill_info.resx">
+      <DependentUpon>Bill_info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer search.resx">
+      <DependentUpon>Customer search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dealer Search.resx">
+      <DependentUpon>Dealer Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dealer.resx">
+      <DependentUpon>Dealer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DealerInfo.resx">
+      <DependentUpon>DealerInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDealer.resx">
+      <DependentUpon>DeleteDealer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Search.resx">
+      <DependentUpon>Employee Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee Profile.resx">
+      <DependentUpon>Empolyee Profile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expence.resx">
+      <DependentUpon>Expence.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Purchase.resx">
+      <DependentUpon>New Purchase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase detail.resx">
+      <DependentUpon>Purchase detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDealer.resx">
+      <DependentUpon>SearchDealer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockEdit.resx">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockTable.resx">
+      <DependentUpon>StockTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemControl.resx">
+      <DependentUpon>SystemControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Purchase detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase detail.Designer.cs">
+      <DependentUpon>Purchase detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDealer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDealer.Designer.cs">
+      <DependentUpon>SearchDealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockEdit.Designer.cs">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockTable.Designer.cs">
+      <DependentUpon>StockTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemControl.Designer.cs">
+      <DependentUpon>SystemControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="IMAGE\308050_404192002985468_401879079_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\images4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\mobile-shopping2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\Home_Wel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\sony_ericsson_to_close_uk_flagship_retail_store_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\12560133u.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\stock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\2011-mobile-statistics-small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\Water_Eff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\cus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\cus2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\emp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\emp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\O2_UK_to_Revamp_150_Mobile_Phone_Shops.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\admin2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\TescoPhoneShop.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGE\mobile-phone-shop-designs.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
